@@ -1,0 +1,135 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  background: linear-gradient(rgba(255, 255, 255, 0.914),rgba(255, 255, 255, 0.574),rgba(255, 255, 255, 0.799))
+ 
+}
+
+
+.calculator{
+    width: 100%; 
+    min-height: 80vh; 
+    max-width: 450px;
+    padding:10px 20px  20px 20px;
+    box-shadow: 0 0 15px #000; 
+    border-radius: 15px;
+   box-shadow: 12px 12px 20px #cbced1,
+               -12px -12px 20px #ffffff;
+   background:#000;
+   position: relative;
+}
+
+.theme{
+    width: 20%;
+    height: 7%;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.dark i{
+    color: white;
+    font-size: 2rem;
+    transition: all ease 0.8s;  
+}
+
+.light i{
+    color: black;
+    font-size: 2rem;
+    display: none; 
+    transition: all ease 0.8s;  
+}
+
+#inputbox{
+    width: 94%;
+    height: 70px;
+    font-size:25px;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: orangered;
+    border: none;
+    background: transparent;
+    margin-left: 5px;
+    margin-top: 5rem;
+   border-radius: 6px; 
+}
+
+input::placeholder{
+    color:black;    
+}
+
+.s-nav{
+  height: 50%;    
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(5,1fr); 
+  grid-row-gap: 20px;
+  margin: 60px 10px 50px 30px;
+  position: relative;
+  top:0.5vw;
+  left: 0.75vw;
+} 
+
+.row{
+    display: grid;
+     grid-template-columns: repeat( 4, 1fr); 
+    grid-column-gap: 20px;
+}
+
+.btn{
+    padding: 10px;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border: 3px;
+    border-radius: 8px;
+    background-color: #fff;
+   box-shadow: 5px 5px 8px #00000020
+               -5px -5px 8px #ffffff;
+    
+    cursor: pointer;
+}
+ 
+.btn:active{
+    background: #cbced1;
+    box-shadow: inset 5px 5px 8px(rgba(16,16,16,.1))
+                inset -5px -5px 8px #fff;
+    translate: translate(2px 2px);
+}
+
+.opr{
+    color:white;
+    background-color: orangered;
+    font-weight: 700;
+}
+
+.opr1{
+    font-size: 1.2rem;
+}
